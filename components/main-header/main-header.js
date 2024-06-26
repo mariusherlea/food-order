@@ -3,6 +3,7 @@ import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import classes from "./main-header.module.css";
 import NavLink from "./nav-link";
+import Navbar from "./nav-bar";
 
 export default function MainHeader() {
   return (
@@ -12,12 +13,7 @@ export default function MainHeader() {
         NextLevel Food
       </Link>
       <nav className={classes.nav}>
-        <ul>
-          <li>
-            <NavLink href={"/meals"}>Browse meals</NavLink>
-            <NavLink href={"/community"}>Community</NavLink>
-          </li>
-        </ul>
+        <Navbar />
       </nav>
     </header>
   );

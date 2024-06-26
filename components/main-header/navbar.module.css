@@ -1,0 +1,41 @@
+.navbar {
+  padding: 1rem;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navMenu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navMenu a {
+  color: #ddd6cb;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navMenu.active {
+    display: flex;
+  }
+}
