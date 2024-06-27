@@ -4,6 +4,11 @@ import Link from "next/link";
 import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "All meals",
+  description: "Browse all meals created by the community",
+};
+
 async function Meals() {
   console.log("Fetching meals...");
   const meals = await getMeals();
